@@ -1,3 +1,4 @@
+
 # The TraceEvent Library Programmers Guide
 
 ## Introduction: Strongly Typed (Semantic) Logging
@@ -1115,7 +1116,7 @@ model is the ‘fundamental’ mechanism in TraceEvent
    (e.g. foreach), as each event is processed it must be cast to the correct
    type to get at its event-specific fields. This is clumsy and inefficient.  
 
-Thus the pull (callback) model is encouraged, but there are definitely cases
+Thus the push (callback) model is encouraged, but there are definitely cases
 where a pull model is convenient (e.g. iterating over all events of a particular
 type in an ETL file) where the pull model (foreach) is not problematic and the
 library should support.
