@@ -1345,7 +1345,7 @@ PerfView before you start trying to debug why your code is not working properly.
 Below are the steps in converting logging an event with a stack to a resolved
 symbolic name annotated with some things that can go wrong along the way.
 
-1. When the event is logged the ETW system tries to craw the stack at runtime.
+1. When the event is logged the ETW system tries to crawl the stack at runtime.
    However this can fail for various reasons
     1. On 32 bit machine the crawler assumes the compiler stores unwinding
        information (EBP frames) on the stack. If the compile does not do this
